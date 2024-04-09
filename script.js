@@ -92,3 +92,13 @@ console.log(divBy5);
 const largerNum = n1 >= n4;
 console.log(largerNum);
 // true (because 10 is larger than 5)
+
+// Accomplish the following arithmetic chain
+// Subtract the first number from the second number
+const newNum = n2 - n1;
+console.log(newNum);
+// 5 (15-10=5)
+// Multiply the result by the third number
+const newerNum = newNum * n3;
+console.log(newerNum);
+// 100 (5*20=100)
