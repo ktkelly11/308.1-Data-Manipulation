@@ -17,7 +17,7 @@ console.log(isSum50);
 // arithmetic to count the total number of odd numbers.
 const isTwoOdd = (n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2;
 console.log(isTwoOdd);
-// true
+// true (that means we have 2 or more odd numbers)
 const is1Odd = n1 % 2;
 console.log(is1Odd);
 // 0 (so this is not odd because it returned a value of 0)
@@ -30,11 +30,21 @@ console.log(is3Odd);
 const is4Odd = n4 % 2;
 console.log(is4Odd);
 // 1 (this is an odd number because it returned a value of 1)
+// Another way of doing it:
+let firstVariable = n1 % 2;
+if (n1 % 2 === 0) {
+  console.log("It is even");
+} else {
+  console.log("It is odd");
+}
+// It is even!
 
 // Check three: no number larger than 25
 // This time, we use the OR operator to check
 // if ANY of the numbers is larger than 25.
 const isOver25 = n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25;
+console.log(isOver25);
+// false (all of them are less than 25)
 
 // Check four: all unique numbers
 // This is long, and there are more efficient
