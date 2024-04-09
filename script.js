@@ -52,6 +52,8 @@ console.log(isOver25);
 // that we will review later.
 const isUnique =
   n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4;
+console.log(isUnique);
+// true (this means that each number is different)
 
 // Here, we put the results into a single variable
 // for convenience. Note how we negate isOver25 using
@@ -61,6 +63,7 @@ const isValid = isSum50 && isTwoOdd && !isOver25 && isUnique;
 
 // Finally, log the results.
 console.log(isValid);
+// true
 
 // Here's another example of how this COULD be done,
 // but it SHOULD NOT be done this way. As programmers,
@@ -77,9 +80,15 @@ const dontDoThis =
   n2 != n4 &&
   n3 != n4;
 
-//MAth Problems:
+// Math Problems:
 
-//Check if all numbers are divisible by 5
+// Check if all numbers are divisible by 5
 
-divBy5 = (n1 % 5) + (n2 % 5) + (n3 % 5) + (n4 % 5);
+const divBy5 = (n1 % 5) + (n2 % 5) + (n3 % 5) + (n4 % 5) === 0;
 console.log(divBy5);
+// true (because they did not return any remainder it means 5 goes into each of the numbers evenly)
+
+// Check if the first number larger than the last
+const largerNum = n1 >= n4;
+console.log(largerNum);
+// true (because 10 is larger than 5)
