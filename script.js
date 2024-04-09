@@ -102,3 +102,7 @@ console.log(newNum);
 const newerNum = newNum * n3;
 console.log(newerNum);
 // 100 (5*20=100)
+//Find the remainder of dividing the result by the fourth number.
+const newestNum = newerNum % n4;
+console.log(newestNum);
+// 0 (100%5=0 because 5 goes into 100 20 times with no remainder)
