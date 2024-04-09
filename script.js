@@ -16,6 +16,20 @@ console.log(isSum50);
 // Since % 2 is 0 if even and 1 if odd, we can use
 // arithmetic to count the total number of odd numbers.
 const isTwoOdd = (n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2;
+console.log(isTwoOdd);
+// true
+const is1Odd = n1 % 2;
+console.log(is1Odd);
+// 0 (so this is not odd because it returned a value of 0)
+const is2Odd = n2 % 2;
+console.log(is2Odd);
+// 1 (this is an odd number because it returned a value of 1)
+const is3Odd = n3 % 2;
+console.log(is3Odd);
+// 0 (so this is not odd because it returned a value of 0)
+const is4Odd = n4 % 2;
+console.log(is4Odd);
+// 1 (this is an odd number because it returned a value of 1)
 
 // Check three: no number larger than 25
 // This time, we use the OR operator to check
@@ -52,3 +66,10 @@ const dontDoThis =
   n2 != n3 &&
   n2 != n4 &&
   n3 != n4;
+
+//MAth Problems:
+
+//Check if all numbers are divisible by 5
+
+divBy5 = (n1 % 5) + (n2 % 5) + (n3 % 5) + (n4 % 5);
+console.log(divBy5);
