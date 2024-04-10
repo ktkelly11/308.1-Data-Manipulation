@@ -186,4 +186,4 @@ console.log(
 // When traveling 75 mph, driving 1500 miles will take 20 hours, require 65.21739130434783 gallons, and cost more than your $175 budget.
 
 // Which makes the most sense for the trip?
-// I think traveling at 60mph makes the most sense, because you are under budget than if you traveled at 75mph, but also takes less time than if you went at 55mph
+// I think traveling at 60mph makes the most sense, because you are under budget unlike if you traveled at 75mph, but also takes less time than if you went at 55mph
