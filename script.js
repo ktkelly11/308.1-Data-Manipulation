@@ -122,6 +122,65 @@ console.log(isUnder25);
 
 // Part 2
 
-`Example on concatenation ${variablename} and continue writing and cand add more ${
-  othervariable * thirvariable
-} etc`;
+const milesTotal = 1500;
+const miles1 = 55;
+const miles2 = 60;
+const miles3 = 75;
+const milesPerGall1 = 30;
+const milesPerGall2 = 28;
+const milesPerGall3 = 23;
+const budget = 175;
+const fuelPerGall = 3;
+
+// How many gallons of fuel will you need for the entire trip?
+const numOfGallons1 = milesTotal / milesPerGall1;
+console.log(numOfGallons1);
+// It will take 50 gallons
+
+const numOfGallons2 = milesTotal / milesPerGall2;
+console.log(numOfGallons2);
+// It will take 53.57142857142857 gallons
+
+const numOfGallons3 = milesTotal / milesPerGall3;
+console.log(numOfGallons3);
+// It will take 65.21739130434783 gallons
+
+// Will your budget be enough to cover the fuel expense?
+const budget1 = numOfGallons1 * fuelPerGall <= budget;
+console.log(budget1);
+// true
+
+const budget2 = numOfGallons2 * fuelPerGall <= budget;
+console.log(budget2);
+// true
+
+const budget3 = numOfGallons3 * fuelPerGall <= budget;
+console.log(budget3);
+// false (this trip would not be within budget)
+
+// How long will the trip take, in hours?
+const tripHours1 = milesTotal / miles1;
+console.log(tripHours1);
+// 27.272727272727273 hours
+
+const tripHours2 = milesTotal / miles2;
+console.log(tripHours2);
+// 25 hours
+
+const tripHours3 = milesTotal / miles3;
+console.log(tripHours3);
+// 20 hours
+
+// Compare the results when traveling at an average of 55, 60, and 75 miles per hour. Which makes the most sense for the trip?
+console.log(
+  `When traveling ${miles1} mph, driving ${milesTotal} miles will take ${tripHours1} hours, require ${numOfGallons1} gallons, and be within your $${budget} budget.`
+);
+// When traveling 55 mph, driving 1500 miles will take 27.272727272727273 hours, require 50 gallons, and be within your $175 budget.
+console.log(
+  `When traveling ${miles2} mph, driving ${milesTotal} miles will take ${tripHours2} hours, require ${numOfGallons2} gallons, and be within your $${budget} budget.`
+);
+// When traveling 60 mph, driving 1500 miles will take 25 hours, require 53.57142857142857 gallons, and be within your $175 budget.
+console.log(
+  `When traveling ${miles3} mph, driving ${milesTotal} miles will take ${tripHours3} hours, require ${numOfGallons3} gallons, and cost more than your $${budget} budget.`
+);
+// When traveling 75 mph, driving 1500 miles will take 20 hours, require 65.21739130434783 gallons, and cost more than your $175 budget.
