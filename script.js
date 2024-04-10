@@ -171,16 +171,19 @@ const tripHours3 = milesTotal / miles3;
 console.log(tripHours3);
 // 20 hours
 
-// Compare the results when traveling at an average of 55, 60, and 75 miles per hour. Which makes the most sense for the trip?
+// Compare the results when traveling at an average of 55, 60, and 75 miles per hour.
 console.log(
-  `When traveling ${miles1} mph, driving ${milesTotal} miles will take ${tripHours1} hours, require ${numOfGallons1} gallons, and be within your $${budget} budget.`
+  `When traveling ${miles1} mph, driving ${milesTotal} miles will take ${tripHours1} hours, requires ${numOfGallons1} gallons, and be within your $${budget} budget.`
 );
 // When traveling 55 mph, driving 1500 miles will take 27.272727272727273 hours, require 50 gallons, and be within your $175 budget.
 console.log(
-  `When traveling ${miles2} mph, driving ${milesTotal} miles will take ${tripHours2} hours, require ${numOfGallons2} gallons, and be within your $${budget} budget.`
+  `When traveling ${miles2} mph, driving ${milesTotal} miles will take ${tripHours2} hours, requires ${numOfGallons2} gallons, and be within your $${budget} budget.`
 );
 // When traveling 60 mph, driving 1500 miles will take 25 hours, require 53.57142857142857 gallons, and be within your $175 budget.
 console.log(
   `When traveling ${miles3} mph, driving ${milesTotal} miles will take ${tripHours3} hours, require ${numOfGallons3} gallons, and cost more than your $${budget} budget.`
 );
 // When traveling 75 mph, driving 1500 miles will take 20 hours, require 65.21739130434783 gallons, and cost more than your $175 budget.
+
+// Which makes the most sense for the trip?
+// I think traveling at 60mph makes the most sense, because you are under budget than if you traveled at 75mph, but also takes less time than if you went at 55mph
