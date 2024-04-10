@@ -80,6 +80,8 @@ const dontDoThis =
   n2 != n4 &&
   n3 != n4;
 
+// Part 1
+
 // Math Problems:
 
 // Check if all numbers are divisible by 5
@@ -106,3 +108,20 @@ console.log(newerNum);
 const newestNum = newerNum % n4;
 console.log(newestNum);
 // 0 (100%5=0 because 5 goes into 100 20 times with no remainder)
+const num1 = ((n2 - n1) * n3) % n4;
+console.log(num1);
+// ALSO 0!!!!
+
+//Change the way that isOver25 calculates so that we do not need to use the NOT operator (!) in other logic comparisons. Rename the variable as appropriate.
+const isUnder25 = n1 < 25 && n2 < 25 && n3 < 25 && n4 < 25;
+console.log(isUnder25);
+//returns true and you can do the same with const isOver25
+//const isOver25 = n1 > 25 && n2 > 25 && n3 > 25 && n4 > 25;
+// console.log(isOver25);
+// would return false because they are all less than 25
+
+// Part 2
+
+`Example on concatenation ${variablename} and continue writing and cand add more ${
+  othervariable * thirvariable
+} etc`;
